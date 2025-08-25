@@ -1,0 +1,279 @@
+sartak@kali:~$ ls
+	Lists
+   	description: folder contents.
+    
+Desktop Documents Downloads Music Pictures Public Templates Videos
+		sartak@kali:~$ pwd
+  	description:  Shows current directory path.
+  	 /home/user
+		sartak@kali:~$ cd
+  	 description: Navigates directories.
+  	 (no output; changes directory silently)
+		sartak@kali:~$ mkdr
+  	 description: Creates directories.
+  	 (no output; creates folder successfully)
+		sartak@kali:~$ rmdir
+  	 description: 
+Deletes empty directories.
+  	 (no output; removes folder successfully)
+		sartak@kali:~$ rm
+  	 description: Deletes files or folders.
+  	 
+(no output; file deleted)
+		sartak@kali:~$ cp
+  	description:  Copies files or directories.
+  	 
+(no output; file copied)
+		sartak@kali:~$ mv
+  	 description: 
+Moves or renames files/directories.
+  	 
+(no output; file moved/renamed)
+		sartak@kali:~$ touch
+  	description:  Creates empty files.
+  	 (no output; file created)
+	sartak@kali:~$ 	file
+  	description: Determines file type.
+  	 test.txt: ASCII text
+  	sartak@kali:~$ zip and unzip
+  	description: Compresses/extracts ZIP archives.
+  	adding: file.txt (stored 0%)
+		sartak@kali:~$ tar
+description: 
+Archives files (with optional compression).
+(no output; archive created)
+	sartak@kali:~$ 	nano
+description: Text editors.
+(no output; opens editor interface)
+sartak@kali:~$ 	cat
+description: Prints or concatenates file contents.
+
+Hello, this is the file content.
+	sartak@kali:~$ 	grep
+description: Searches text using patterns.
+pattern found in line 3
+sartak@kali:~$ 		sed
+description: Stream editor for text manipulation.
+replaced text output
+	sartak@kali:~$ head
+description: Prints first few lines of a file.
+
+Line 1
+Line 2
+Line 3
+	sartak@kali:~$ 	tail
+description: Prints last few lines of a file.
+Line 8
+Line 9
+Line 10
+
+	sartak@kali:~$ awk
+description: 
+Processes and analyzes text files.
+	
+Average: 75
+	sartak@kali:~$ 	sort
+description: 	
+Sorts file contents.
+	
+apple
+banana
+cherry
+		sartak@kali:~$ cut
+description:     	
+Extracts sections from lines.
+    	field3,field4,field5
+		sartak@kali:~$ diff
+description:     	Compares files line by line.
+    	1c1
+< old line
+		new line
+		sartak@kali:~$ tee
+description:     	Outputs to Terminal and file.
+    	PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+	sartak@kali:~$ locate
+description:     	Finds files by name.
+    	/home/user/file.txt
+
+		sartak@kali:~$ find
+description:  Searches for files in a directory.
+
+ ./file.txt
+sartak@kali:~$ sudo
+
+description:  Executes commands with superuser privileges.
+
+ sudo password for user:
+sartak@kali:~$ 	su 
+description:  Switches users or shows current user.
+ user
+		sartak@kali:~$ chmod
+
+description:  Changes file permissions.
+
+ (no output; permissions changed)
+		sartak@kali:~$ chown
+
+description:  Changes file ownership.
+ (no output; ownership changed)
+		sartak@kali:~$ useradd
+description:  Manages users.
+ (no output; user added/changed/deleted)
+	sartak@kali:~$ 	df
+description:  Reports disk space usage.
+
+ Filesystem     1K-blocks    Used Available Use% Mounted on
+/dev/sda1      10000000  5000000   5000000  50% /
+
+	sartak@kali:~$ du
+	description: 
+Estimates file space usage.
+	
+4	./folder
+	sartak@kali:~$ 	top
+ 	description: Displays running processes.
+ 	
+PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+	sartak@kali:~$ 	htop
+  description:   	
+Interactive process viewer.
+    	
+(interactive interface; no static output)
+	sartak@kali:~$ ps
+  description:   	Reports process status.
+    	
+PID TTY          TIME CMD
+1234 pts/0    00:00:00 bash
+	sartak@kali:~$ 	uname
+  description:   	Prints system information.
+    	Linux
+		sartak@kali:~$ hostname
+   description:  	Shows or sets system hostname.
+    	
+ubuntu-host
+		sartak@kali:~$ time
+   description:  	Measures command execution time.
+    	real	0m0.001s
+user	0m0.000s
+sys	0m0.001s
+
+	sartak@kali:~$ systemctl
+	description: Manages system services.
+	UNIT                           LOAD   ACTIVE SUB       DESCRIPTION
+	sartak@kali:~$ 	watch
+ description: 	
+Runs a command periodically.
+ 	Every 2.0s: date
+Sun Aug 24 21:23:00 IST 2025
+	sartak@kali:~$ 	jobs
+    description: 	
+Lists active jobs.
+    	+  Running                 sleep 60 &
+sartak@kali:~$ 	kill
+description: 
+Terminates processes.
+
+(no output; process terminated)
+	sartak@kali:~$ shutdown
+description: Shuts down or restarts the system.
+Shutdown scheduled for Sun 2025-08-24 21:24:00 IST, use ‘shutdown -c’ to cancel.
+	sartak@kali:~$ 	ping
+description: Tests network connectivity.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=128 time=10 ms
+	
+	sartak@kali:~$ wget
+ description: Downloads files from the web.
+ –2025-08-24 21:32:00–  http://example.com/file
+Length: 1256 text/html
+Saving to: ‘file’
+sartak@kali:~$ 	curl
+
+ description: Transfers data with URLs.
+		sartak@kali:~$ scp
+
+description:  Securely copies files over SSH.
+
+ file.txt                                100%    0     0.0KB/s   00:00
+	sartak@kali:~$ rsync
+
+description:  Syncs files/directories.
+building file list …
+ done
+file.txt
+sent 100 bytes  received 20 bytes  240.00 bytes/sec
+total size is 0  speedup is 0.00
+	sartak@kali:~$ ip
+description:  Manages network interfaces.
+
+ 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+
+sartak@kali:~$ 	netstat
+description: Displays network connections.
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State
+		sartak@kali:~$ traceroute
+description:  Traces route to a network host.
+ traceroute to google.com (142.250.1.1), 30 hops max, 60 byte packets
+1  gateway (192.168.1.1)  1.000 ms  1.000 ms  1.000 ms
+		sartak@kali:~$ nslookup
+
+description:  Queries DNS. Server:		127.0.0.53
+Address:	127.0.0.53#53
+Non-authoritative answer:
+
+ Address: 93.184.216.34
+		sartak@kali:~$ dig
+
+description:  DNS lookup tool.
+;; ANSWER SECTION:
+example.com.	
+ 3600	IN	A	93.184.216.34
+		sartak@kali:~$ history
+
+description:  Shows command history.
+ 1  ls
+2  pwd
+		sartak@kali:~$ man
+
+description:  Displays manual pages.
+
+ LS(1)                        User Commands                       LS(1)
+NAME
+ls - list directory contents
+	sartak@kali:~$ echo
+
+description:  Prints text or variables.
+
+ Hello World
+		sartak@kali:~$ 	ln
+description:  Creates links between files.
+ (no output; link created)
+	sartak@kali:~$ 	alias 
+description:  Creates/removes command aliases.
+
+ alias k=‘kill’
+		sartak@kali:~$ cal
+
+description:  Displays calendar.
+
+ August 2025
+Su Mo Tu We Th Fr Sa
+1  2
+3  4  5  6  7  8  9
+10 11 12 13 14 15 16
+17 18 19 20 21 22 23
+24 25 26 27 28 29 30
+31
+	sartak@kali:~$ 	apt 
+ description: Package managers.
+Reading package lists… Done
+Building dependency tree… Done
+Reading state information… Done
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+
+
+
+
+
